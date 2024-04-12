@@ -1,38 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.userInput {
+  display: inline-flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gistList {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.gistDetails {
+  display: flex;
+  text-align: left;
+  margin-top: 25px;
+  min-width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detailsContainer {
+  width: 600px;
+}
+
+.forksHeader {
+  display: flex;
+  align-items: center;
+}
+
+.forksCount {
+  display: flex;
+  margin-left: 7px;
+}
+
+.forksList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.forkDetailCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  background: #121212 !important;
+  color: #fff !important;
+  width: 275px;
+}
+
+.forkDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  margin: 10px;
+  margin-right: 15px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.table {
+  width: 80%;
+  border-spacing: 0;
+  border: 1px solid #eee;
+  border-top: none;
+  margin-bottom: 12px;
+}
+
+.table-header {
+  background: #000;
+  color: #fff;
+}
+
+.table-header th {
+  padding: 15px;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eeeeee;
+}
+
+.hasSelectableRows tr:hover {
+  cursor: pointer;
+  background: #4fe8d1;
+}
+
+td {
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.show {
+  display: inline-flex;
+}
+
+.hide {
+  display: none;
+}
+
+.chip {
+  padding: 3px 8px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0 7px;
+  background: #9b9b9b;
+  color: #fff;
+}
+
+.chip.ruby {
+  background: #cc0000;
+}
+
+.chip.python {
+  background: #4584b6;
+}
+
+.chip.shell {
+  background: #293137;
+}
+
+.chip.markdown {
+  background: #DA605B;
+}
+
+.chip.html {
+  background: #f06529
+}
+
+.chip.js {
+  background: #f7df1e;
+}
+
+.chip.css {
+  background: #264de4;
 }
